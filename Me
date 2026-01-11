@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ali Erkul</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: #0f0f0f;
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 2rem;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+        }
+
+        .hero-content h1 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-content p {
+            font-size: 1.5rem;
+            color: #aaa;
+            margin-bottom: 2rem;
+        }
+
+        .section {
+            max-width: 1000px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+        }
+
+        .section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: #667eea;
+        }
+
+        .about-content {
+            background: #1a1a2e;
+            padding: 2rem;
+            border-radius: 12px;
+            border: 1px solid #333;
+        }
+
+        .about-content p {
+            color: #ccc;
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .info-card {
+            background: #1a1a2e;
+            padding: 1.5rem;
+            border-radius: 12px;
+            border: 1px solid #333;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .info-card:hover {
+            transform: translateY(-5px);
+            border-color: #667eea;
+        }
+
+        .info-card h3 {
+            color: #667eea;
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+        }
+
+        .info-card p {
+            color: #aaa;
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .skill-tag {
+            background: #667eea;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        .contact-links {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .contact-link {
+            color: #667eea;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+
+        .contact-link:hover {
+            color: #764ba2;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 2rem;
+            color: #666;
+            margin-top: 4rem;
+        }
+
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero-content p {
+                font-size: 1.2rem;
+            }
+            
+            .section h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <div class="hero-content">
+            <h1>İsmin Soyadın</h1>
+            <p>Mesleğin veya Unvanın</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Hakkımda</h2>
+        <div class="about-content">
+            <p>Bilgisayarda takılmaktan, oyun oynamaktan ve bisiklet sürmekten hoşlanırım.</p>
+            <p>Şuanda sanayide çalışıyorum ama hedefim hem bisiklet hemde yazılım alanında gelişmek.</p>
+            <p>Şuanki hedefim para biriktirmek ve sakin kafayla yazlığımızda yaşamak.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Bilgiler</h2>
+        <div class="info-grid">
+            <div class="info-card">
+                <h3>📍 Konum</h3>
+                <p>İstanbul, Türkiye</p>
+            </div>
+            <div class="info-card">
+                <h3>🎓 Eğitim</h3>
+                <p>Boş </p>
+            </div>
+            <div class="info-card">
+                <h3>💼 Çalışma</h3>
+                <p>Oto24<br>Çırak</p>
+            </div>
+            <div class="info-card">
+                <h3>🌐 Diller</h3>
+                <p>Türkçe (Ana dil)<br>İngilizce (Orta seviye)<br>Kürtçe(Giriş seviyesi)</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Yetenekler & İlgi Alanları</h2>
+        <div class="about-content">
+            <div class="skills-list">
+                <span class="skill-tag">Güç</span>
+                <span class="skill-tag">Yabancı dil</span>
+                <span class="skill-tag">Refleksler</span>
+                <span class="skill-tag">Oto tamir</span>
+                <span class="skill-tag">Spor</span>
+                <span class="skill-tag">Teknoloji</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>İletişim</h2>
+        <div class="contact-links">
+            <a href="mailto:email@example.com" class="contact-link">📧 erkul5675@gmail.com</a>
+            <a href="https://github.com/kullaniciadi" class="contact-link">💻 https://github.com/rookieprograming</a>
+            <a href="https://instagram.com/kullaniciadi" class="contact-link">📷 m.alioneal</a>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>© 2026 Ali Erkul. Tüm hakları saklıdır.</p>
+    </div>
+</body>
+</html>
